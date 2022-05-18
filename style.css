@@ -1,0 +1,255 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #112;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+*
+*   HEADER
+*
+*/
+
+header {
+    text-align: center;
+    background-color: #124;
+    color: white;
+    padding: 16px;
+}
+#header-logo {
+    display:block;
+    width: 96px;
+    margin: 0 auto;
+}
+header h1 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.4ch;
+    position: relative;
+    bottom: 72px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    margin-top: -24px;
+    padding: 0;
+}
+header ul li {
+    display: block;
+    margin: .4em auto;
+}
+header .button {
+    display: block;
+}
+
+#user-actions{
+    margin: 16px;
+}
+#usr-img, #hnr-img {
+    width: 32px;
+    padding: 8px;
+    background-color: #def;
+    border-radius: 50%;
+}
+
+#user-actions img, #user-actions span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+/*
+*
+*   FOOTER
+*
+*/
+
+footer {
+    background: #124;
+    text-align: center;
+    padding: 20px;
+    margin-top: 5em;
+}
+
+
+/*
+*
+*   UTILITY
+*
+*/
+
+.button {
+    border: 0;
+    cursor: pointer;
+    padding: .75em 4ch;
+    border-radius: 4px;
+    box-shadow: 0 4px 1px 1px black;
+    background-color: #248;
+    color: white;
+    text-decoration: none;
+    transition: background-color .2s, color .2s;
+}
+.button:hover {
+    background-color: white;
+    color: #248;
+}
+
+/*
+*
+*   HOME/MAIN
+*
+*/
+
+#home-about > h1, p{
+    padding: 0 16px;
+}
+#home-about h1 {
+    text-transform: uppercase;
+    font-size: 300%;
+    line-height: .8em;
+}
+#home-about p {
+    line-height: 1.5em;
+}
+
+
+/*
+*
+* LOGIN FORM
+*
+*/
+
+#login-form {
+    text-align: center;
+    background: #124;
+    margin: .5em 0;
+    padding: 4em 0;
+}
+#login-form img {
+    width: 56px;
+    background-color: #def;
+    border-radius: 100%;
+    padding: 8px;
+    display: inline;
+    vertical-align: middle;
+    position: relative;
+    left: 8px;
+    z-index: 2;
+    overflow: hidden;
+    margin: 8px auto;
+}
+#login-form input[type=text], #login-form input[type=password] {
+    border: 0;
+    border-radius: 16px;
+    padding: 8px;
+    padding-left: 20px;
+    font-size: 1em;
+    position: relative;
+    right: 8px;
+    box-shadow: 0 4px 1px 1px black;
+    z-index: 1;
+    background-color: #000;
+    color: white;
+    width: 220px;
+}
+#login-form .button {
+    margin: 3em auto 0;
+    position: relative;
+    right: 4px;
+    left: 4px;
+    min-width: 306px;
+    border-radius: 16px;
+    padding: 14px 0;
+}
+
+/* Errors */
+#login-form .error p {
+    color: #f44;
+    margin: 0 0 1em;
+}
+#login-form .error img {
+    background-color: #f44;
+    width: 16px;
+    margin: 0 1.2ch 0 0 ;
+}
+
+/* Login/Register option */
+#login-form a {
+    color: #def;
+}
+#login-form a:hover {
+    color: #fff;
+}
+
+/*
+*
+*   GAME SETUP
+*
+*/
+.e, .b, .f, .g{
+    width: 48px;
+    height: 48px;
+}
+.e {background-color: gray;}
+.b {background-color: blue;}
+.f {background-color: red;}
+.g {background-color: green;}
+
+#winloss {
+    background-color: #124;
+    margin: 1em 0;
+    text-align: center;
+    padding: 2em .25em;
+    font-size: 300%;
+}
+#winloss img {
+    width: 48px;
+    padding: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/*
+*
+*   DESKTOP FRIENDLY
+*
+*/
+
+@media only screen and (min-width: 800px){
+    
+    #user-actions {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        margin: 0;
+    }
+    #main {
+        margin: 4em 5%;
+    }
+    #main .col-2 img {
+        height: 400px;
+    }
+    .col-2 {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    header ul li {
+        display: inline-block;
+    }
+    header a.button {
+        display: inline-block;
+        min-width: 100px;
+    }
+    #login-form {
+        width: 600px;
+        border-radius: 8px;
+        margin: 4em auto;
+        border: 0;
+    }
+}
